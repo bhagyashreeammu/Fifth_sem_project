@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: lightseagreen;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: lightslategrey;
+        }
+
+        fieldset {
+            background-color: #eeeeee;
+        }
+
+        .search {
+            float: right;
+            margin: 0;
+        }
+
+
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .input-container {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            padding: 10px;
+            background: blue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border: 2px solid dodgerblue;
+        }
+
+        /* Set a style for the submit button */
+        button {
+            background-color: #7f3fff;
+            color: white;
+            padding: 10px 12px;
+            margin: 4px 0;
+            border: none;
+            cursor: pointer;
+            width: 40%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: left;
+            padding-top: 8px;
+        }
+
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1 style="font-size:40px"><i>Online Examination</i></h1>
+    </center>
+
+    <ul>
+        <li><a href="home.html" class="fa fa-home" style="font-size:19px"></a></li>
+        <li><a href="Registration.php">Registration</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Course.html">Course</a></li>
+        <li><a href="Instru.html">Exam Instructions</a></li>
+        <div class="search">
+            <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact us</a></li>
+        </div>
+    </ul>
+
+    <br><br><br>
+
+
+
+
+    <div class="col-lg-6 offset-md-2">
+        <form action="Course.html" style="max-width:500px;margin:auto">
+            <fieldset class="border p-2">
+                <legend class="w-auto">
+                    <h2><strong>Login Form</strong></h2>
+                </legend>
+
+               <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="username" name="usrnm" required>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input class="input-field" type="password" placeholder="Password" name="psw" required>
+                </div>
+                <!--
+  <button type="submit">Login</button>
+  <button type="submit">Logout</button>
+-->
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Login</button>
+                </div>
+                <br><br>
+                <div>
+                    <span class="psw">Forgot <a href="#">password?</a></span><br>
+
+                </div>
+
+        </form>
+        </fieldset>
+
+
+
+
+<script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script> 
+
+
+</body>
+
+</html>
