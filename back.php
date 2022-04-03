@@ -1,5 +1,5 @@
 <?php
-//print_r($_POST);exit;
+
 header("Location: Login.html");
 
 $First_name = $_POST['First_name'];
